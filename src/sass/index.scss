@@ -1,2 +1,30 @@
-@import './common';
-@import './example';
+@import './base/normalize';
+@import './base/reset';
+@import './base/root';
+@import './base/base';
+
+@import './components/header';
+@import './components/footer';
+
+// MAIN page
+@import './components/hero';
+@import './components/about';
+@import './components/rest-details';
+@import './components/welcome';
+@import './components/hotel-details';
+@import './components/contacts';
+
+// RESTAURANT page
+@import './components/hero-rest';
+@import './components/rest-about';
+@import './components/rest-menu';
+
+// HOTEL page
+@import './components/hero-hotel';
+@import './components/luxury';
+@import './components/triple';
+@import './components/seater';
+
+// ROOM page
+@import './components/hero-room';
+@import './components/amenites';
