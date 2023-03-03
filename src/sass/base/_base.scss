@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color-primary;
+  font-size: 14px;
+  font-family: $font-primary;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -18,6 +28,16 @@
 }
 
 .container {
+  max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @include screen(tablet) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @include screen(desktop) {
+    max-width: 1400px;
+  }
 }

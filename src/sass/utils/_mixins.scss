@@ -1,0 +1,19 @@
+@mixin screen($size) {
+  $desktop: '(min-width: 1400px)';
+  $tablet: '(min-width: 768px)';
+  $mobile: '(min-width: 375px)';
+
+  @if $size == desktop {
+    @media only screen and #{$desktop} {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media only screen and #{$tablet} {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media only screen and #{$mobile} {
+      @content;
+    }
+  }
+}
