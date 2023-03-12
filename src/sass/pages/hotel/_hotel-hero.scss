@@ -1,0 +1,34 @@
+
+
+.section.section--hero {
+  padding-top: 40px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.container.container--hero{
+  padding-right: 0;
+}
+.hero-hotel__list-btn{
+  display: flex;
+  margin-top: 24px;
+  gap: 12px;
+}
+.hero-hotel__list-img{
+ margin-top: 40px; 
+}
+.hero-hotel__group-elements{
+  padding-right: 20px;
+}
+.slider__btn{
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+  margin-top: 24px;
+}
+.hero-hotel__text{
+  @include text-main-mobile;
+  text-transform: uppercase;
+  margin-top: 40px;
+  max-width: 335px;
+}
