@@ -23,11 +23,9 @@
 @import './components/hero';
 @import './components/about';
 
-// MAIN page
-// @import './pages/main';
-
-// RESTAURANT page
-// @import './pages/restaurant';
+// HOTEL page
+@import './pages/hotel/hotel-hero';
+@import './pages/hotel/hotel-rooms';
 
 // HOTEL page
 // @import './pages/hotel';
