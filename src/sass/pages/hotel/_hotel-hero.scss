@@ -4,10 +4,17 @@
   padding-top: 40px;
   padding-bottom: 0;
   margin: 0;
+  @include screen(desktop){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .container.container--hero{
   padding-right: 0;
+}
+.hero-hotel__title{
+margin-top: 204px;
 }
 .hero-hotel__list-btn{
   display: flex;
@@ -22,6 +29,13 @@
 }
 .hero-hotel__group-elements{
   padding-right: 20px;
+  @include screen(desktop) {
+      display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 367px;
+    }
 }
 .slider__btn{
   display: flex;
@@ -34,6 +48,9 @@
   text-transform: uppercase;
   margin-top: 40px;
   max-width: 335px;
+  @include screen(desktop){
+    margin-top: 0;
+  }
 }
 // -------- style for swiper 
 .hotel-swiper{
@@ -53,6 +70,6 @@ max-width: 255px;
 .flex__desktop--wraper{
   @include screen(desktop){
     display: flex;
-    gap: 400px;
+    gap: 425px;
   }
 }
