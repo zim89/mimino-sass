@@ -13,25 +13,26 @@
     />
 
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/layouts/header.html"></include>
 
-    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/components/hero.html"></include>
 
-    <include src="./partials/hero.html"></include>
+      <include src="./partials/components/about.html"></include>
 
-    <include src="./partials/about.html"></include>
+      <include src="./partials/layouts/footer.html"></include>
 
-    <include src="./partials/rest-details.html"></include>
+      <include src="./partials/components/modals.html"></include>
+    </main>
 
-    <include src="./partials/welcome.html"></include>
+    <script>
+      feather.replace();
+    </script>
 
-    <include src="./partials/hotel-details.html"></include>
-
-    <include src="./partials/contacts.html"></include>
-
-    <include src="./partials/footer.html"></include>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

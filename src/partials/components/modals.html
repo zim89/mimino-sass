@@ -1,0 +1,191 @@
+<!-- !MODAL: Book a table -->
+<div class="modal" data-modal="modal-table">
+  <button type="button" class="modal__btn"></button>
+
+  <div class="modal__wrap">
+    <h2 class="modal__title">Book <i>a table</i></h2>
+
+    <form class="form" autocomplete="off">
+      <div class="form__wrap">
+        <!-- ?FIELD: Name -->
+        <label class="form__field">
+          <input
+            class="form__input"
+            placeholder="Your name"
+            name="name"
+            type="text"
+            pattern="^[a-zA-Zа-яА-Я]+"
+            minlength="3"
+          />
+          <span class="form__desc">Who should book a table for?</span>
+        </label>
+
+        <!-- ?FIELD: Number of people -->
+        <label class="form__field">
+          <span class="select-wrap">
+            <select class="form__select" name="number">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </span>
+          <span class="form__desc">Number of people</span>
+        </label>
+
+        <!-- ?FIELD: Date -->
+        <label class="form__field">
+          <input
+            class="form__input"
+            name="date"
+            type="date"
+            id="currentDateTable"
+          />
+          <span class="form__desc">What date to book?</span>
+        </label>
+
+        <!-- ?FIELD: Phone number -->
+        <label class="form__field">
+          <input
+            class="form__input"
+            name="phone"
+            type="tel"
+            placeholder="+38 . . ."
+            pattern="[\+]?[38]{2}?[0-9]{3}?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+            title="[+38xxxxxxxxxx]"
+            minlength="13"
+            maxlength="13"
+          />
+          <span class="form__desc">Phone number</span>
+        </label>
+
+        <button class="form__submit" type="submit">Make a reservation</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- !MODAL: Book a room -->
+<div class="modal" data-modal="modal-room">
+  <button type="button" class="modal__btn"></button>
+
+  <div class="modal__wrap">
+    <h2 class="modal__title">Book <i>a room</i></h2>
+
+    <form class="form" autocomplete="off">
+      <div class="form__wrap">
+        <!-- ?FIELD: Name -->
+        <label class="form__field">
+          <input
+            class="form__input"
+            placeholder="Your name"
+            name="name"
+            type="text"
+            pattern="^[a-zA-Zа-яА-Я]+"
+            minlength="3"
+          />
+          <span class="form__desc">Who should book a table for?</span>
+        </label>
+
+        <!-- ?FIELD: Phone number -->
+        <label class="form__field">
+          <input
+            class="form__input"
+            name="phone"
+            type="tel"
+            placeholder="+38 . . ."
+            pattern="[\+]?[38]{2}?[0-9]{3}?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+            title="[+38xxxxxxxxxx]"
+            minlength="12"
+            maxlength="12"
+          />
+          <span class="form__desc">Phone number</span>
+        </label>
+
+        <!-- ?FIELD: Date (current) -->
+        <label class="form__field">
+          <input
+            class="form__input"
+            name="dateCurrent"
+            type="date"
+            id="currentDateRoom"
+          />
+          <span class="form__desc">What date to book?</span>
+        </label>
+
+        <!-- ?FIELD: Date next -->
+        <label class="form__field">
+          <input
+            class="form__input form__input-icon"
+            name="dateNext"
+            type="date"
+            value="2023-03-25"
+          />
+          <span class="form__desc">Check-in date</span>
+        </label>
+
+        <!-- ?FIELD: Number category -->
+        <label class="form__field">
+          <span class="select-wrap">
+            <select class="form__select" name="category">
+              <option value="1">single suite</option>
+              <option value="2" selected>double suite</option>
+              <option value="4">multi-bed suite</option>
+            </select>
+          </span>
+          <span class="form__desc">Number category</span>
+        </label>
+      </div>
+      <button class="form__submit" type="submit">Make a reservation</button>
+    </form>
+  </div>
+</div>
+
+<!-- !MODAL: Price per room -->
+<div class="modal" data-modal="modal-price">
+  <button type="button" class="modal__btn"></button>
+
+  <div class="modal__wrap">
+    <h2 class="modal__title">Prices per room</h2>
+
+    <form class="form" autocomplete="off">
+      <div class="form__wrap">
+        <!-- ?FIELD: Number of nights -->
+        <label class="form__field">
+          <span class="form__lable">Double suite</span>
+          <span class="select-wrap">
+            <select class="form__select" name="category">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </span>
+          <span class="form__desc">Number of nights</span>
+        </label>
+
+        <!-- ?FIELD: Price -->
+        <label class="form__field form__field--self-bottom">
+          <input class="form__input" name="price" type="text" value="1000" />
+          <span class="form__desc">uah</span>
+        </label>
+      </div>
+      <button class="form__submit" type="submit">Make a reservation</button>
+    </form>
+  </div>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+
+<script type="module">
+  document.getElementById('currentDateTable').value = new Date()
+    .toISOString()
+    .substring(0, 10);
+  document.getElementById('currentDateRoom').value = new Date()
+    .toISOString()
+    .substring(0, 10);
+</script>

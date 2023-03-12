@@ -1,31 +1,36 @@
-@import './base/normalize';
+// VENDORS
+@import './vendors/normalize';
+
+// UTILS
+@import './utils/variables';
+@import './utils/vhidden';
 @import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/animations';
+
+// BASE
 @import './base/reset';
-@import './base/root';
 @import './base/base';
+@import './base/fonts';
 
-@import './components/header';
-@import './components/footer';
+// LAYOUT
+@import './layout/header';
+@import './layout/nav';
+@import './layout/footer';
+@import './components/modals';
 
-// MAIN page
+//COMPONENTS
 @import './components/hero';
 @import './components/about';
-@import './components/rest-details';
-@import './components/welcome';
-@import './components/hotel-details';
-@import './components/contacts';
+
+// MAIN page
+// @import './pages/main';
 
 // RESTAURANT page
-@import './components/hero-rest';
-@import './components/rest-about';
-@import './components/rest-menu';
+// @import './pages/restaurant';
 
 // HOTEL page
-@import './components/hero-hotel';
-@import './components/luxury';
-@import './components/triple';
-@import './components/seater';
+// @import './pages/hotel';
 
 // ROOM page
-@import './components/hero-room';
-@import './components/amenites';
+// @import './pages/room';
