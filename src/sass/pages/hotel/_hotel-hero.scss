@@ -16,6 +16,9 @@
 }
 .hero-hotel__list-img{
  margin-top: 40px; 
+ @include screen(desktop){
+  margin-top: 0;
+ }
 }
 .hero-hotel__group-elements{
   padding-right: 20px;
@@ -31,4 +34,25 @@
   text-transform: uppercase;
   margin-top: 40px;
   max-width: 335px;
+}
+// -------- style for swiper 
+.hotel-swiper{
+  overflow: hidden;
+  
+}
+.hero-hotel__list-img .swiper-slide{
+max-width: 255px;
+@include screen(tablet) {
+  max-width: 436px;
+}
+
+}
+.btn--left.swiper-button-disabled,.btn--right.swiper-button-disabled{
+   color: $btn-disabled;
+}
+.flex__desktop--wraper{
+  @include screen(desktop){
+    display: flex;
+    gap: 400px;
+  }
 }

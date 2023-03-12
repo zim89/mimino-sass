@@ -1,20 +1,10 @@
 const swiper = new Swiper('.hotel-swiper', {
- setWrapperSize: true,
-  uniqueNavElements: true,
-  speed: 300,
+ slidesPerView: 1.5,
   spaceBetween: 20,
-  slidesPerView: 2,
-  breakpoints: {
-    768: {
-      spaceBetween: 32,
-    },
-    1440: {
-      spaceBetween: 32,
-      slidesPerView: 4.833,
-      grabCursor: true,
-    },
-  },
-
+  breakpoints: {768: {
+      
+      spaceBetween: 32
+    },},
   // Navigation arrows
   navigation: {
     nextEl: '.btn--right',

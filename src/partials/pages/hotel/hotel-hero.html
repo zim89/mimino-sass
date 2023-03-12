@@ -1,38 +1,113 @@
 <section class="section section--hero">
   <div class="container container--hero">
-    <h1 class="title">hotel</h1>
-    <ul class="hero-hotel__list-btn">
-      <li>
-        <button class="btn" type="button">book a room</button>
-      </li>
-      <li>
-        <button class="btn" type="button">view prices</button>
-      </li>
-    </ul>
-    <!-- ------------------------ slider -------------------------------------------- -->
+    <div class="flex__desktop--wraper">
+      <div>
+        <h1 class="title hero-hotel__title">hotel</h1>
+        <ul class="hero-hotel__list-btn">
+          <li>
+            <button class="btn" type="button">book a room</button>
+          </li>
+          <li>
+            <button class="btn" type="button">view prices</button>
+          </li>
+        </ul>
+      </div>
+      <!-- ------------------------ slider -------------------------------------------- -->
 
-    <div class="hotel-swiper">
-      <ul class="hero-hotel__list-img swiper-wrapper">
-        <li class="swiper-slide">
-          <img
-            src="/src/images/hotel/hero/imagehotel-mobile1.jpg"
-            alt="image1"
-          />
-        </li>
-        <li class="swiper-slide">
-          <img
-            src="/src/images/hotel/hero/imagehotel-mobile2.jpg"
-            alt="image2"
-          />
-        </li>
-        <li class="swiper-slide">
-          <img
-            src="/src/images/hotel/hero/imagehotel-mobile3.jpg"
-            alt="image3"
-          />
-        </li>
-      </ul>
+      <div class="hotel-swiper">
+        <ul class="hero-hotel__list-img swiper-wrapper">
+          <li class="swiper-slide">
+            <picture class="">
+              <!-- !Tablet -->
+
+              <source
+                type="image/jpg"
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hotel/hero/tablet/imagehotel1.jpg    1x,
+                  ./images/hotel/hero/tablet/imagehotel1@2x.jpg 2x
+                "
+              />
+              <!-- !Mobile -->
+
+              <source
+                type="image/jpg"
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/hotel/hero/imagehotel-mobile1.jpg    1x,
+                  ./images/hotel/hero/imagehotel-mobile1@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/hotel/hero/imagehotel-mobile1.jpg"
+                alt="hotel-img1"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+
+          <li class="swiper-slide">
+            <picture class="">
+              <!-- !Tablet -->
+
+              <source
+                type="image/jpg"
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hotel/hero/tablet/imagehotel2.jpg    1x,
+                  ./images/hotel/hero/tablet/imagehotel2@2x.jpg 2x
+                "
+              />
+              <!-- !Mobile -->
+
+              <source
+                type="image/jpg"
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/hotel/hero/imagehotel-mobile2.jpg    1x,
+                  ./images/hotel/hero/imagehotel-mobile2@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/hotel/hero/imagehotel-mobile2.jpg"
+                alt="hotel-img2"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+          <li class="swiper-slide">
+            <picture class="">
+              <!-- !Tablet -->
+
+              <source
+                type="image/jpg"
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hotel/hero/tablet/imagehotel3.jpg    1x,
+                  ./images/hotel/hero/tablet/imagehotel3@2x.jpg 2x
+                "
+              />
+              <!-- !Mobile -->
+
+              <source
+                type="image/jpg"
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/hotel/hero/imagehotel-mobile3.jpg    1x,
+                  ./images/hotel/hero/imagehotel-mobile3@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/hotel/hero/imagehotel-mobile3.jpg"
+                alt="hotel-img3"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
     </div>
+
     <div class="hero-hotel__group-elements">
       <ul class="slider__btn">
         <li>
