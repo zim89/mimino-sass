@@ -1,0 +1,24 @@
+.nav__link--hotel.current {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%);
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: $bg-color-dark;
+    border-radius: 50%  ;
+    transition: transform $transition-dur-func , width $transition-dur-func;;
+  }
+   &:hover.nav__link--hotel.current::after{
+    width: 100%;
+    border-radius: 16px;
+   }
+}
