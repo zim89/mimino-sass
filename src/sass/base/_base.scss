@@ -64,12 +64,19 @@ body {
 }
 
 .title {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  @include title-main-mobile;
   text-transform: uppercase;
-
+  @include screen(tablet){
+  @include title-main-mobile(
+    $f-s: 80px,
+    $l-h: 80px,
+  );
+}
+@include screen(desktop) {
+  @include title-main-mobile($f-s: 90px,
+    $l-h: 90px,
+  );
+}
   &--accent {
     font-size: 32px;
     line-height: 1.12;
