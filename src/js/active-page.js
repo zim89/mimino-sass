@@ -3,7 +3,10 @@ const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
 const logoAccent = document.querySelector('.logo span');
 
-if (window.location.href === 'http://localhost:1234/') {
+if (
+  window.location.href === 'http://localhost:1234/' ||
+  window.location.href === 'https://zim89.github.io/mimino-sass/'
+) {
   nav.querySelector('#home').classList.add('nav__link--active');
 }
 
@@ -17,7 +20,8 @@ document.querySelectorAll('.nav__link').forEach(link => {
   console.log(window.location);
   if (
     window.location.href.includes('index') ||
-    window.location.href === 'http://localhost:1234/'
+    window.location.href === 'http://localhost:1234/' ||
+    window.location.href === 'https://zim89.github.io/mimino-sass/'
   ) {
     logoAccent.style.color = '#d8d7d7';
     const isDarkText = header.classList.contains('header--dark-text');
