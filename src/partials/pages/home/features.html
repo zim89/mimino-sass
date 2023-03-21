@@ -1,0 +1,84 @@
+<!-- !FEATURES section -->
+<section class="section features">
+  <div class="container">
+    <div class="features__wrap">
+      <div class="features__thumb">
+        <picture class="features__img-primary">
+          <!-- ?Tablet + Desktop-->
+          <source
+            type="image/jpg"
+            media="(min-width: 768px)"
+            srcset="
+              ./images/main/features/img01_530.jpg    1x,
+              ./images/main/features/img01_530@2x.jpg 2x
+            "
+          />
+
+          <!-- ?Mobile -->
+          <source
+            type="image/jpg"
+            media="(max-width: 767px)"
+            srcset="
+              ./images/main/features/img01_335.jpg    1x,
+              ./images/main/features/img01_335@2x.jpg 2x
+            "
+          />
+
+          <img
+            src="./images/main/features/img01_335.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </picture>
+      </div>
+
+      <div class="features__meta">
+        <div class="features__content">
+          <h2 class="subtitle features__subtitle">business class hotel</h2>
+          <p class="text features__text">
+            The Mimino hotel features spacious and stylish double luxury rooms
+            with modern amenities for a comfortable stay.
+          </p>
+        </div>
+        <picture>
+          <!-- ?Tablet + Desktop-->
+          <source
+            class="features__img-secondary"
+            type="image/jpg"
+            media="(min-width: 768px)"
+            srcset="
+              ./images/main/features/img02_266.jpg    1x,
+              ./images/main/features/img02_266@2x.jpg 2x
+            "
+          />
+
+          <!-- ?Mobile -->
+          <source
+            type="image/jpg"
+            media="(max-width: 767px)"
+            srcset="
+              ./images/main/features/img02_335.jpg    1x,
+              ./images/main/features/img02_335@2x.jpg 2x
+            "
+          />
+
+          <img
+            src="./images/main/features/img02_335.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </picture>
+      </div>
+
+      <div class="review features__review">
+        <img src="./images/avatars/avatar02.png" alt />
+        <ul class="review__list">
+          <li class="review__item">Alexander</li>
+          <li class="review__item">
+            <span class="review__accent">give rating</span>&nbsp;5.5
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mimino</title>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
 
-    <link rel="stylesheet" href="./sass/index.scss" />
-
+    <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Project css -->
+    <link rel="stylesheet" href="./sass/index.scss" />
   </head>
+
   <body>
-    <include src="./partials/layouts/header_hotel.html"></include>
+    <include src="./partials/layouts/header.html"></include>
 
     <main>
-      <include src="./partials/pages/hotel/hotel-hero.html"></include>
-
-      <include src="./partials/pages/hotel/hotel-rooms.html"></include>
-
-      <include src="./partials/layouts/footer.html"></include>
-
-      <include src="./partials/components/modals.html"></include>
+      <!-- Partials HOTEL page -->
+      <include src="./partials/pages/hotel/hero.html"></include>
+      <include src="./partials/pages/hotel/rooms.html"></include>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <include src="./partials/layouts/footer.html"></include>
+
+    <include src="./partials/components/modals.html"></include>
+
+    <!-- Icons js -->
     <script>
       feather.replace();
     </script>
-    <script type="module" src="./js/swiper-hotel.js"></script>
+
+    <!-- Project js -->
     <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -7,31 +7,39 @@
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './utils/animations';
-@import './utils/current';
+// @import './utils/current';
 
 // BASE
 @import './base/reset';
-@import './base/fonts';
 @import './base/base';
-
-
-// LAYOUT
-@import './layout/header';
-@import './layout/header-hotel';
-@import './layout/nav';
-@import './layout/footer';
-@import './components/modals';
+@import './base/fonts';
 
 //COMPONENTS
-@import './components/hero';
-@import './components/about';
+@import './components/section';
+@import './components/container';
+@import './components/title';
+@import './components/text';
+@import './components/btn';
+@import './components/modals';
+@import './components/review';
+@import './components/burger';
+@import './components/socials';
+@import './components/logo';
+
+// LAYOUT
+@import './layout/nav';
+@import './layout/header';
+@import './layout/footer';
+
+// Home page
+@import './pages/home/hero';
+@import './pages/home/about';
+@import './pages/home/features';
 
 // HOTEL page
-@import './pages/hotel/hotel-hero';
-@import './pages/hotel/hotel-rooms';
+@import './pages/hotel/hero';
+@import './pages/hotel/rooms';
 
-// HOTEL page
-// @import './pages/hotel';
+// RESTAURANT page
 
 // ROOM page
-// @import './pages/room';

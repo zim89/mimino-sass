@@ -1,0 +1,31 @@
+.socials {
+  display: none;
+
+  @include screen(tablet) {
+    display: flex;
+    gap: 14px;
+  }
+
+  &__link {
+    color: currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform $transition-dur-func;
+
+    // &--dark {
+    //   color: $text-color-primary;
+    // }
+
+    &:hover .socials__icon {
+      transform: scale(1.2);
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    // font-weight: lighter;
+  }
+}

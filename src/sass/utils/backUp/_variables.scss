@@ -10,7 +10,6 @@ $text-color-secondary: #f7f7f7;
 $text-color-black: #000000;
 $text-color-gray: #484848;
 $text-color-gray-light: #d8d7d7;
-$text-color-fone: #f6f6f6;
 
 /* BACKGROUND COLOR */
 $bg-color-dark: #121212;
@@ -21,15 +20,12 @@ $bg-color-fone: #f6f6f6;
 /* BORDER COLOR */
 $border-color-dark: #121212;
 $border-color-light: #f7f7f7;
-
+/* variables for icon */
+$stroke-color-menu:#000000;
+$stroke-color-icon:rgba(0, 0, 0, 0.1);
+$fill-color-icon:#ffffff;
+$background-color-icon:#285AEB;
+/* swiper */
+$btn-disabled:rgba(18, 18, 18, 0.3);
 /* OTHER */
 $transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-/* variables for icon */
-$stroke-color-menu: #000000;
-$stroke-color-icon: rgba(0, 0, 0, 0.1);
-$fill-color-icon: #ffffff;
-$background-color-icon: #285aeb;
-
-/* swiper */
-$btn-disabled: rgba(18, 18, 18, 0.3);

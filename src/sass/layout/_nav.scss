@@ -1,41 +1,47 @@
-.menu {
-  @extend %list;
+.nav {
+  display: none;
 
-  &__link {
-    @extend %link;
-  }
-
-  @include screen(tablet) {
+  @include screen(desktop) {
+    // color: $text-color-secondary;
     display: flex;
-    gap: 40px;
+    align-items: center;
+    gap: 32px;
 
     &__link {
       position: relative;
-      display: block;
-      color: var(--text-dark-color);
-      font-weight: 500;
-      line-height: 1.5;
-      transition: color var(--transition-dur-func);
-    }
+      color: currentColor;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.29;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
 
-    &__link--active {
-      color: var(--text-active-color);
-    }
+      &::after {
+        opacity: 0;
+        visibility: 0;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%);
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: currentColor;
+        border-radius: 50%;
+        transition: all $transition-dur-func;
+      }
 
-    &__link--active::after {
-      content: '';
-      position: absolute;
-      bottom: -23px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: var(--bg-pressed-color);
-    }
+      &:hover::after {
+        width: 100%;
+        opacity: 1;
+        visibility: 1;
+        border-radius: 16px;
+      }
 
-    &__link:hover,
-    &__link:focus {
-      color: var(--text-active-color);
+      &--active.nav__link::after {
+        visibility: 1;
+        opacity: 1;
+      }
     }
   }
 }

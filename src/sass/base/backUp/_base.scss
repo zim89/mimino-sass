@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color-primary;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $font-primary;
+}
+
+.section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  @include screen(tablet){
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include screen(desktop){
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include screen(tablet) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @include screen(desktop) {
+    max-width: 1400px;
+  }
+}
+
+.btn-set {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+  padding: 8px 18px;
+  border: 0.8px solid $border-color-dark;
+  border-radius: 32px;
+
+  &--light {
+    color: $text-color-secondary;
+    border-color: $bg-color-light;
+  }
+
+  &--modal {
+    color: $text-color-secondary;
+    padding: 14px 48px;
+    border-color: $bg-color-light;
+  }
+
+  &--hero {
+    line-height: 1.71;
+    padding: 8px 24px;
+  }
+}
+
+.title {
+  @include title-main-mobile;
+  text-transform: uppercase;
+  @include screen(tablet){
+  @include title-main-mobile(
+    $f-s: 80px,
+    $l-h: 80px,
+  );
+}
+@include screen(desktop) {
+  @include title-main-mobile($f-s: 90px,
+    $l-h: 90px,
+  );
+}
+  &--accent {
+    font-size: 32px;
+    line-height: 1.12;
+    color: $text-color-black;
+  }
+
+  &--sub {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.18em;
+    color: $text-color-gray;
+  }
+}
+
+.text {
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  @include screen(tablet) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+  }
+
+  &--accent {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.18em;
+    color: $text-color-gray;
+  }
+}

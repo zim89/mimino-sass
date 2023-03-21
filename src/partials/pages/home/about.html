@@ -1,10 +1,11 @@
+<!-- !ABOUT section -->
 <section class="section about">
   <div class="container">
     <div class="about__wrap">
       <h2 class="visually-hidden">About</h2>
       <div class="about__thumb">
         <picture class="about__img-primary">
-          <!-- !Tablet -->
+          <!-- ?Tablet -->
           <source
             type="image/webp"
             media="(min-width: 768px)"
@@ -21,7 +22,7 @@
               ./images/main/about/tablet-img2@2x.jpg 2x
             "
           />
-          <!-- !Mobile -->
+          <!-- ?Mobile -->
           <source
             type="image/webp"
             media="(max-width: 767px)"
@@ -46,7 +47,24 @@
         </picture>
 
         <picture class="about__img-secondary">
-          <!-- !Tablet -->
+          <!-- ?Desktop -->
+          <source
+            type="image/webp"
+            media="(min-width: 1440px)"
+            srcset="
+              ./images/main/about/desktop-img.webp    1x,
+              ./images/main/about/desktop-img@2x.webp 2x
+            "
+          />
+          <source
+            type="image/jpg"
+            media="(min-width: 1440px)"
+            srcset="
+              ./images/main/about/desktop-img.jpg    1x,
+              ./images/main/about/desktop-img@2x.jpg 2x
+            "
+          />
+          <!-- ?Tablet -->
           <source
             type="image/webp"
             media="(min-width: 768px)"
@@ -64,7 +82,7 @@
             "
           />
 
-          <!-- !Mobile -->
+          <!-- ?Mobile -->
           <source
             type="image/webp"
             media="(max-width: 767px)"
@@ -90,7 +108,7 @@
         </picture>
 
         <div class="review about__review">
-          <img src="./images/main/about/maria.png" alt />
+          <img src="./images/avatars/avatar01.png" alt />
           <ul class="review__list">
             <li class="review__item">Maria</li>
             <li class="review__item">

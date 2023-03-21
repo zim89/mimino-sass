@@ -1,0 +1,21 @@
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  @include screen(tablet) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+  }
+
+  &--accent {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.18em;
+    color: $text-color-gray;
+  }
+}

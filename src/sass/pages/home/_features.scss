@@ -1,0 +1,55 @@
+.features {
+  &__wrap {
+    position: relative;
+
+    @include screen(desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 87px;
+    }
+  }
+
+  &__thumb {
+    margin-bottom: 54px;
+
+    @include screen(tablet) {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__img-primary {
+  }
+
+  &__meta {
+    @include screen(tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      gap: 32px;
+    }
+  }
+  &__content {
+    margin-bottom: 40px;
+
+    @include screen(tablet) {
+      width: 263px;
+    }
+  }
+  &__review {
+    position: absolute;
+    top: 272px;
+    left: 0;
+
+    @include screen(tablet) {
+      top: 303px;
+      left: 99px;
+    }
+
+    @include screen(desktop) {
+      top: 303px;
+      left: 700px;
+    }
+  }
+}

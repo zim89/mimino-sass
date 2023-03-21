@@ -1,0 +1,12 @@
+@mixin title-main-mobile ($f-w: 400, $f-s: 40px, $l-h: 40px, $l-s: -0.02em, ) {
+  font-weight: $f-w;
+  font-size: $f-s;
+  line-height: calc($l-h/$f-s);
+  letter-spacing: $l-s;
+}
+@mixin text-main-mobile ($f-w: 400, $f-s: 14px, $l-h: 18px, $l-s: 0.05em ,) {
+  font-weight: $f-w;
+  font-size: $f-s;
+  line-height: calc($l-h/$f-s);
+  letter-spacing: $l-s;
+}

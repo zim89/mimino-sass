@@ -1,0 +1,33 @@
+.btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+  padding: 8px 18px;
+  border: 0.8px solid $border-color-dark;
+  border-radius: 32px;
+
+  &__modal {
+    color: $text-color-secondary;
+    padding: 14px 48px;
+    border-color: $bg-color-light;
+  }
+
+  &__hero {
+    line-height: 1.71;
+    padding: 8px 24px;
+  }
+}
+
+.btn--light {
+  color: $text-color-secondary;
+  border-color: $bg-color-light;
+}
+
+.btn-set {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}

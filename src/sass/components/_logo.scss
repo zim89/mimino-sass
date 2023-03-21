@@ -1,0 +1,25 @@
+.logo {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: currentColor;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include screen(tablet) {
+    margin-left: 235px;
+  }
+
+  &__accent {
+    display: block;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    // color: $text-color-gray-light;
+    margin-top: 3px;
+  }
+}
