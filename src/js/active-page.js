@@ -11,8 +11,11 @@ document.querySelectorAll('.nav__link').forEach(link => {
     active.classList.remove('nav__link--active');
     link.classList.add('nav__link--active');
   }
-
-  if (window.location.href.includes('index')) {
+  console.log(window.location);
+  if (
+    window.location.href.includes('index') ||
+    window.location.href === 'http://localhost:1234/'
+  ) {
     logoAccent.style.color = '#d8d7d7';
     const isDarkText = header.classList.contains('header--dark-text');
     if (isDarkText) {
