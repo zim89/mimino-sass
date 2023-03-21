@@ -1,14 +1,17 @@
 const active = document.querySelector('.nav__link--active');
 const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
-const burger = document.querySelector('.burger');
-const logo = document.querySelector('.logo');
-const socials = document.querySelector('.socials');
 const logoAccent = document.querySelector('.logo span');
+
+if (window.location.href === 'http://localhost:1234/') {
+  nav.querySelector('#home').classList.add('nav__link--active');
+}
 
 document.querySelectorAll('.nav__link').forEach(link => {
   if (link.href === window.location.href) {
-    active.classList.remove('nav__link--active');
+    if (active) {
+      active.classList.remove('nav__link--active');
+    }
     link.classList.add('nav__link--active');
   }
   console.log(window.location);
