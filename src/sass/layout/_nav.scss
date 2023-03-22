@@ -2,7 +2,6 @@
   display: none;
 
   @include screen(desktop) {
-    // color: $text-color-secondary;
     display: flex;
     align-items: center;
     gap: 32px;
