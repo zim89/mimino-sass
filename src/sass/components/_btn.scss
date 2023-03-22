@@ -1,13 +1,51 @@
+.btn-set {
+  display: flex;
+  gap: 12px;
+
+  @include screen(tablet) {
+    gap: 14px;
+  }
+}
+
 .btn {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #121212;
+  color: $text-color-primary;
   padding: 8px 18px;
   border: 0.8px solid $border-color-dark;
   border-radius: 32px;
+  transition: all $transition-dur-func;
+
+  &:hover {
+    background-color: $bg-color-dark;
+    color: $text-color-secondary;
+  }
+
+  // Модификатор цвета для кнопки
+  &--light {
+    color: $text-color-secondary;
+    border-color: $bg-color-light;
+
+    &:hover {
+      color: $text-color-primary;
+      border-color: $bg-color-dark;
+    }
+  }
+
+  @include screen(tablet) {
+    padding: 8px 24px;
+    line-height: 1.71;
+  }
+
+  @include screen(desktop) {
+    padding: 9px 24px;
+    lfont-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+  }
 
   &__modal {
     color: $text-color-secondary;
@@ -19,15 +57,4 @@
     line-height: 1.71;
     padding: 8px 24px;
   }
-}
-
-.btn--light {
-  color: $text-color-secondary;
-  border-color: $bg-color-light;
-}
-
-.btn-set {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
 }

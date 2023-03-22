@@ -1,21 +1,59 @@
+// Текст на страницах
 .text {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
   @include screen(tablet) {
-    font-weight: 500;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
   }
 
+  // Модификатор текста в pages hero
   &--accent {
+    letter-spacing: 0.05em;
+
+    @include screen(tablet) {
+      font-size: 14px;
+      line-height: 1.29;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  // Модификатор цвета
+  &--light {
+    color: $text-color-secondary;
+  }
+}
+
+// Блюдо + цена в REST MENU
+.lead {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: $text-color-secondary;
+
+  @include screen(tablet) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+// Описание блюда в REST MENU
+.lead-muted {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.4;
+  color: $text-color-muted;
+
+  @include screen(tablet) {
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.5;
     letter-spacing: 0.18em;
-    color: $text-color-gray;
   }
 }

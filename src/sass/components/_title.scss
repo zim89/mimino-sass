@@ -1,23 +1,86 @@
-.title {
-  font-weight: 500;
+// Заголовок страницы
+.heading {
+  font-style: normal;
+  font-weight: 400;
   font-size: 40px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
-  &--accent {
-    font-size: 32px;
-    line-height: 1.12;
-    color: $text-color-black;
+  @include screen(tablet) {
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  @include screen(desktop) {
+    font-size: 90px;
+    line-height: 1;
   }
 }
 
-.subtitle {
+// Заголовок страницы ROOM
+.subheading {
+  font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.18em;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: $text-color-gray;
-  margin-bottom: 18px;
+
+  @include screen(tablet) {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @include screen(desktop) {
+    font-size: 80px;
+    line-height: 1;
+  }
+}
+
+// Заголовки на страницах + заголовок меню ('title title--light')
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  @include screen(tablet) {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  &--light {
+    color: $text-color-secondary;
+  }
+}
+
+// Используется на странице ROOM
+.subtitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+
+  @include screen(tablet) {
+    font-size: 40px;
+  }
+}
+
+// используется в REST MENU
+.caption {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+
+  @include screen(tablet) {
+    font-size: 24px;
+    line-height: 1;
+  }
 }
