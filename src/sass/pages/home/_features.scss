@@ -32,6 +32,9 @@
   }
   &__content {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 
     @include screen(tablet) {
       width: 263px;

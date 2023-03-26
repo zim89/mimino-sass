@@ -56,6 +56,14 @@
   }
 }
 
+.subtitle-main {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $text-color-gray;
+}
+
 // Используется на странице ROOM
 .subtitle {
   font-weight: 700;
