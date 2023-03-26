@@ -27,11 +27,11 @@
   // Модификатор цвета для кнопки
   &--light {
     color: $text-color-secondary;
-    border-color: $bg-color-light;
+    border-color: $border-color-light;
 
     &:hover {
       color: $text-color-primary;
-      border-color: $bg-color-dark;
+      background-color: $bg-color-light;
     }
   }
 
