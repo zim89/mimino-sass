@@ -53,18 +53,17 @@
     }
   }
 
-  &__title {
+  &__heading {
     color: $text-color-secondary;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 80px;
     line-height: 1;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
     text-align: center;
     margin-bottom: 24px;
 
     @include screen(tablet) {
       font-size: 150px;
+      line-height: 1;
       margin-bottom: 32px;
     }
 
@@ -75,7 +74,7 @@
     }
   }
 
-  &__btns {
+  &__meta {
     margin-bottom: 40px;
 
     @include screen(tablet) {
@@ -93,6 +92,7 @@
 
   &__btn-set {
     margin-bottom: 66px;
+    justify-content: center;
 
     @include screen(tablet) {
       gap: 32px;
@@ -102,32 +102,6 @@
     @include screen(desktop) {
       gap: 14px;
       margin-bottom: 0;
-    }
-  }
-
-  &__btn {
-    color: $text-color-secondary;
-    border-color: $text-color-secondary;
-
-    transition: color $transition-dur-func,
-      background-color $transition-dur-func;
-
-    &:hover,
-    &:focus {
-      background-color: $bg-color-light;
-      color: $text-color-primary;
-    }
-
-    @include screen(tablet) {
-      line-height: 1.71;
-      padding: 8px 24px;
-    }
-
-    @include screen(desktop) {
-      padding: 9px 24px;
-      font-size: 18px;
-      line-height: 1.33;
-      letter-spacing: -0.02em;
     }
   }
 
@@ -149,12 +123,5 @@
       max-width: 684px;
       gap: 30px;
     }
-  }
-
-  &__text {
-    color: $text-color-secondary;
-    font-weight: 400;
-    line-height: 1.29;
-    letter-spacing: 0.05em;
   }
 }
