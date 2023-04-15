@@ -1,2 +1,30 @@
 .rest-about {
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.rest-about__wrap {
+  margin-top: 67px;
+}
+.pict__gap {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  gap: 20px;
+}
+
+.text__italic {
+  font-style: italic;
+}
+.rest-about__list:last-child {
+  margin-top: 24px;
+}
